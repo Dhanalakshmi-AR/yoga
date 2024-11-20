@@ -1,0 +1,66 @@
+<div class="header">
+    <img class="eagleLogo" src="assets/images/eagleLogo.webp" alt="ss">
+    <nav>
+      <a href="#">Overview</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">About</a>
+    </nav>
+    <button class="sign-in">Logout</button>
+  </div>
+
+
+  <div class="card">
+    <section class="content">
+      <img class="person" src="assets/images/person.webp" alt="Image of Zada">
+     
+      <p class="text-p1">
+        <b>Hi! I’m Zada, get your quote within 1 minute.</b><br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
+    </section>
+  </div><br>
+
+
+
+  
+
+<div class="insurance-container">
+  <!-- Premium Details Section -->
+  <div class="premium-details section">
+    <h2>Premium Details</h2>
+    <div class="detail-box">
+      <div class="box-header">POLICY FEES</div>
+      <p>Sum Insured - 200000</p>
+      <p>FSC Fee - 0.35</p>
+      <p><strong>Grand Total</strong>: 202 MUR</p>
+    </div>
+    <div class="detail-box">
+      <div class="box-header">Own Damage</div>
+      <p>Sum Insured - 200000</p>
+      <p>FSC Fee - 0.35</p>
+      <p><strong>Grand Total</strong>: 0 MUR</p>
+    </div>
+  </div>
+
+  <!-- Add-on Covers Section -->
+  <div class="add-on section">
+    <h2>Add-on Covers</h2>
+    <div class="addon-item" *ngFor="let addOn of addOns">
+      <input type="checkbox" id="{{ addOn.name }}" />
+      <label for="{{ addOn.name }}">{{ addOn.name }}</label>
+      <span class="addon-price">{{ addOn.price }} MUR</span>
+    </div>
+  </div>
+
+  <!-- Total Premium Section -->
+  <div class="total-premium section">
+    <h2>Total Premium</h2>
+    <div class="premium-box">
+      <p><strong>Premium Amount:</strong> 202 MUR</p>
+      <p><strong>Policy Number:</strong> EAG-MOT-06172</p>
+      <p><strong>Valid Thru:</strong> 15/11/2025</p>
+    </div>
+    <button class="buy-policy-btn">Buy Policy</button>
+  </div>
+</div>
